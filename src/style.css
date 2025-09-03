@@ -1,79 +1,275 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+html {
+  overflow-x: hidden;
+  height: 100%;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: #fff !important;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  line-height: 1.6;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  background-color: #111 !important;
 }
 
-.card {
-  padding: 2em;
+.poppins-font {
+  font-family: "Poppins", sans-serif !important;
 }
 
-#app {
-  max-width: 1280px;
+.open-sans-font {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+hr.separator {
+  border-top: 1px solid #252525;
+  margin: 70px auto 55px;
+  max-width: 40%;
+}
+
+.ft-wt-600 {
+  font-weight: 600;
+}
+
+.custom-title {
+  padding-bottom: 22px;
+  font-size: 26px;
+}
+
+/*** Page Title ***/
+
+.title-section {
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: 100%;
+  position: relative;
+  padding: 80px 0;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+.title-section h1 {
+  font-size: 56px;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.title-bg {
+  font-size: 110px;
+  left: 0;
+  letter-spacing: 10px;
+  line-height: 0.7;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  text-transform: uppercase;
+  font-weight: 800;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.07);
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 14px;
   }
-  a:hover {
-    color: #747bff;
+}
+
+/**/
+/* Buttons */
+/**/
+
+.btn {
+  box-shadow: none !important;
+  border-radius: 26px !important;
+  font-weight: 500 !important;
+  height: 46px !important;
+  line-height: 46px !important;
+  font-size: 15px !important;
+  text-transform: uppercase;
+  color: #fff !important;
+  padding: 0 40px !important;
+  outline: none !important;
+  overflow: hidden !important;
+  display: inline-block !important;
+  position: relative !important;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.5px;
+  border: 0 !important;
+}
+
+.btn,
+.btn:hover,
+.btn:focus {
+  color: #111111 !important;
+  text-decoration: none !important;
+}
+
+@media (min-width: 992px) {
+  .btn:before {
+    font: 15px/1.2em FontAwesome;
+    /*color: #fff;*/
+    position: absolute !important;
+    height: 100%;
+    right: 25px;
+    top: 50%;
+    margin-top: -9px;
+    transition: all 0.3s;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
   }
-  button {
-    background-color: #f9f9f9;
+
+  .btn.btn-about:before {
+    content: "\f007";
   }
+
+  .btn span {
+    position: relative;
+    display: block;
+    transition: all 0.3s;
+  }
+
+  .btn:hover span {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  .btn:hover:before {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 991px) {
+  .btn {
+    padding: 0 28px;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn {
+    font-size: 14px;
+  }
+}
+
+/**/
+/* Orange Skin */
+/**/
+
+.home h1,
+.box-stats h3,
+.title-section h1 span,
+#menu li.active a,
+body.light #menu li.active a,
+.blog .post-container:hover .post-content .entry-header h3 a,
+.blog .post-content .entry-header h3 a:hover,
+.contact .custom-span-contact i,
+.portfolio .slideshow figcaption h3,
+.portfolio .slideshow a,
+.portfolio .grid figure:hover figcaption,
+.blog-post .meta i {
+  color: #ff8c00 !important;
+}
+.resume-box .icon,
+.contact ul.social li a:hover,
+body.light.contact ul.social li a:hover,
+.preloader .loader,
+.blog .page-link:hover,
+.blog .page-item.active .page-link,
+body.light.blog .page-link:hover,
+body.light.blog .page-item.active .page-link,
+.portfolio .grid li figure div,
+.header ul.icon-menu li.icon-box.active,
+.header ul.icon-menu li.icon-box:hover,
+body.light .header ul.icon-menu li.icon-box.active,
+body.light .header ul.icon-menu li.icon-box:hover,
+.btn,
+.header .icon-box h2,
+.home .color-block,
+.title-section hr,
+.portfolio .slideshow .carousel-indicators li.active {
+  background-color: #ff8c00 !important;
+}
+.contact .contactform input[type="text"]:focus,
+.contact .contactform input[type="email"]:focus,
+.contact .contactform textarea:focus,
+body.light.contact .contactform input[type="text"]:focus,
+body.light.contact .contactform input[type="email"]:focus,
+body.light.contact .contactform textarea:focus,
+.blog .page-item.active .page-link,
+.blog .page-link:hover,
+body.light.blog .page-item.active .page-link,
+body.light.blog .page-link:hover {
+  border: 1px solid #ff8c00 !important;
+}
+.blog .post-thumb {
+  border-bottom: 5px solid #ff8c00 !important;
+}
+.pie,
+.c100 .bar,
+.c100.p51 .fill,
+.c100.p52 .fill,
+.c100.p53 .fill,
+.c100.p54 .fill,
+.c100.p55 .fill,
+.c100.p56 .fill,
+.c100.p57 .fill,
+.c100.p58 .fill,
+.c100.p59 .fill,
+.c100.p60 .fill,
+.c100.p61 .fill,
+.c100.p62 .fill,
+.c100.p63 .fill,
+.c100.p64 .fill,
+.c100.p65 .fill,
+.c100.p66 .fill,
+.c100.p67 .fill,
+.c100.p68 .fill,
+.c100.p69 .fill,
+.c100.p70 .fill,
+.c100.p71 .fill,
+.c100.p72 .fill,
+.c100.p73 .fill,
+.c100.p74 .fill,
+.c100.p75 .fill,
+.c100.p76 .fill,
+.c100.p77 .fill,
+.c100.p78 .fill,
+.c100.p79 .fill,
+.c100.p80 .fill,
+.c100.p81 .fill,
+.c100.p82 .fill,
+.c100.p83 .fill,
+.c100.p84 .fill,
+.c100.p85 .fill,
+.c100.p86 .fill,
+.c100.p87 .fill,
+.c100.p88 .fill,
+.c100.p89 .fill,
+.c100.p90 .fill,
+.c100.p91 .fill,
+.c100.p92 .fill,
+.c100.p93 .fill,
+.c100.p94 .fill,
+.c100.p95 .fill,
+.c100.p96 .fill,
+.c100.p97 .fill,
+.c100.p98 .fill,
+.c100.p99 .fill,
+.c100.p100 .fill {
+  border: 0.08em solid #ff8c00 !important;
+}
+
+.mg-0-a {
+  margin: 0 auto!important;
 }
