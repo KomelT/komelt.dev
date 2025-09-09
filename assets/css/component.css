@@ -48,7 +48,7 @@ body {
 
 /* Slideshow */
 
-.portfolio .slideshow {
+.projects .slideshow {
 	position: fixed;
 	background: rgba(0,0,0,0.85);
 	width: 100%;
@@ -66,14 +66,14 @@ body {
 	text-align: left;
   }
   
-  .portfolio .slideshow-open .slideshow {
+  .projects .slideshow-open .slideshow {
 	opacity: 1;
 	visibility: visible;
 	-webkit-transition: opacity 0.5s;
 	transition: opacity 0.5s;
   }
   
-  .portfolio .slideshow ul {
+  .projects .slideshow ul {
 	width: 100%;
 	height: 100%;
 	-webkit-transform-style: preserve-3d;
@@ -84,21 +84,21 @@ body {
 	transition: transform 0.5s;
   }
   
-  .portfolio .slideshow ul.animatable > li {
+  .projects .slideshow ul.animatable > li {
 	-webkit-transition: -webkit-transform 0.5s;
 	transition: transform 0.5s;
   }
   
-  .portfolio .slideshow-open .slideshow ul {
+  .projects .slideshow-open .slideshow ul {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
   }
   
-  .portfolio .slideshow ul > li.show {
+  .projects .slideshow ul > li.show {
 	visibility: visible;
   }
   
-  .portfolio .slideshow ul > li:after {
+  .projects .slideshow ul > li:after {
 	content: '';
 	position: absolute;
 	width: 100%;
@@ -112,7 +112,7 @@ body {
 	border-radius: 10px;
   }
   
-  .portfolio .slideshow ul > li.current:after {
+  .projects .slideshow ul > li.current:after {
 	visibility: hidden;
 	opacity: 0;
 	-webkit-transition: opacity 0.3s, visibility 0s 0.3s;
@@ -121,15 +121,15 @@ body {
   
   /* Embedded Videos */
   
-  .portfolio .slideshow .videocontainer,
-  .portfolio .slideshow .responsive-video {
+  .projects .slideshow .videocontainer,
+  .projects .slideshow .responsive-video {
 	max-width: 100%;
 	border-radius: 4px;
 	display: block;
 	object-fit: cover;
   }
   
-  .portfolio .slideshow .videocontainer {
+  .projects .slideshow .videocontainer {
 	position: relative;
 	padding-bottom: 56.20%;
 	padding-top: 0;
@@ -142,9 +142,9 @@ body {
 	border-radius: 4px;
   }
   
-  .portfolio .slideshow .videocontainer iframe,
-  .portfolio .slideshow .videocontainer object,
-  .portfolio .slideshow .videocontainer embed {
+  .projects .slideshow .videocontainer iframe,
+  .projects .slideshow .videocontainer object,
+  .projects .slideshow .videocontainer embed {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -850,23 +850,23 @@ body {
 
 @media (max-width: 991px) {
   
-	.portfolio .grid li {
+	.projects .grid li {
 	  width: 50%;
 	}
   
-	.portfolio .grid li figure div {
+	.projects .grid li figure div {
 	  display: none !important;
 	}
   
-	.portfolio .slideshow {
+	.projects .slideshow {
 	  background: #252525;
 	}
   
-	.portfolio .slideshow nav span {
+	.projects .slideshow nav span {
 	  padding: 0;
 	}
   
-	.portfolio .slideshow ul > li {
+	.projects .slideshow ul > li {
 	  width: 100%;
 	  height: 100%;
 	  position: absolute;
@@ -876,18 +876,18 @@ body {
 	  margin: 0;
 	}
   
-	.portfolio .slideshow ul > li:after {
+	.projects .slideshow ul > li:after {
 	  display: none;
 	}
   
-	.portfolio .slideshow figure {
+	.projects .slideshow figure {
 	  padding: 125px 30px 30px;
 	  border-radius: 0;
 	  max-width: 720px;
 	  margin: 0 auto;
 	}
   
-	.portfolio .slideshow nav span:before {
+	.projects .slideshow nav span:before {
 	  display: none;
 	}
 
@@ -899,24 +899,24 @@ body {
 
   @media (max-width: 576px) {
   
-	.portfolio .main-content {
+	.projects .main-content {
 	  padding-bottom: 10px;
 	  margin-top: -12px;
 	}
   
-	.portfolio .grid li {
+	.projects .grid li {
 	  width: 100%;
 	}
   
-	.portfolio .main-content > .container {
+	.projects .main-content > .container {
 	  padding: 0 10px;
 	}
   
-	.portfolio .slideshow figure {
+	.projects .slideshow figure {
 	  padding: 85px 25px 25px;
 	}
   
-	.portfolio .slideshow figcaption h3 {
+	.projects .slideshow figcaption h3 {
 	  font-size: 25px;
 	}
 	.js .page {
