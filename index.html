@@ -3,18 +3,74 @@
 
 <head>
    <meta charset="utf-8">
-   <title>Tilen Komel</title>
+   <title>Tilen Komel — Full‑Stack Developer</title>
    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description"
+      content="Portfolio of Tilen Komel, a Slovenia‑based full‑stack developer building fast, accessible web apps with React/Vue and Node/Deno." />
+   <meta name="robots" content="index,follow" />
+   <link rel="canonical" href="https://www.komelt.dev/">
+   <link rel="icon" type="image/png" href="assets/img/favicon.png">
+   <meta name="theme-color" content="#000000">
+
    <!-- Template Google Fonts -->
-   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+
    <!-- Template CSS Files -->
    <link rel="stylesheet" href="assets/css/circle.css">
    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
    <link rel="stylesheet" href="assets/css/component.css">
    <link rel="stylesheet" href="assets/css/style.css">
+
    <!-- CSS Skin File -->
    <link rel="stylesheet" href="assets/css/skins/orange.css">
+
+   <!-- Open Graph -->
+   <meta property="og:type" content="website">
+   <meta property="og:title" content="Tilen Komel — Full-Stack Developer">
+   <meta property="og:description"
+      content="Portfolio of Tilen Komel, a Slovenia-based full-stack developer building fast, accessible web apps with React/Vue and Node/Deno.">
+   <meta property="og:url" content="https://www.komelt.dev/">
+   <meta property="og:image" content="https://www.komelt.dev/assets/img/tilen_komel1020x610.jpg">
+   <meta property="og:image:width" content="1200">
+   <meta property="og:image:height" content="610">
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:title" content="Tilen Komel — Full-Stack Developer">
+   <meta name="twitter:description"
+      content="Portfolio of Tilen Komel, a Slovenia-based full-stack developer building fast, accessible web apps with React/Vue and Node/Deno.">
+   <meta name="twitter:image" content="https://www.komelt.dev/assets/img/tilen_komel1020x610.jpg">
+
+
+   <!-- Structured Data -->
+   <script type="application/ld+json">
+   {
+   "@context": "https://schema.org",
+   "@type": "Person",
+   "name": "Tilen Komel",
+   "url": "https://www.komelt.dev/",
+   "jobTitle": "Full-Stack Developer",
+   "image": "https://www.komelt.dev/assets/img/tilen_komel500x500.jpg",
+   "knowsAbout": ["JavaScript","React","Vue","Node.js","Deno","Web Performance","Accessibility"],
+   "sameAs": [
+      "https://github.com/komelt",
+      "https://toot.tux.si/@komelt"
+   ],
+   "email": "mailto:me@komelt.dev"
+   }
+   </script>
+
+   <script type="application/ld+json">
+   {
+   "@context": "https://schema.org",
+   "@type": "WebSite",
+   "url": "https://www.komelt.dev/",
+   "name": "Tilen Komel — Full-Stack Developer",
+   "inLanguage": "en"
+   }
+   </script>
+
    <!-- Modernizr JS File -->
    <script src="assets/js/modernizr.min.js"></script>
 </head>
@@ -28,11 +84,18 @@
          class="line m-0 h-250 w-3 rounded-4 relative overflow-hidden transition-all duration-700 before:animate-animateline before:z-10 before:absolute before:left-0 before:top-1/2 before:w-3 before:h-0 before:-translate-y-1/2 after:animate-animatebgline after:absolute after:left-0 after:w-1 after:h-full after:bg-transparent after:-translate-y-full group-[.preloaded]:opacity-0 group-[.preloaded]:!h-full group-[.preloaded]:after:opacity-0">
       </div>
    </div>
+   <noscript>
+      <style>
+         #preloader {
+            display: none !important
+         }
+      </style>
+   </noscript>
    <!-- Preloader Ends -->
    <!-- Header Starts -->
    <header
       class="header from-lg:fixed from-lg:right-30 from-lg:bottom-0 from-lg:z-30 from-lg:flex from-lg:items-center from-lg:h-[calc(100vh-200px)] from-lg:top-100 from-lg:opacity-100 from-lg:transition from-lg:duration-300 from-lg:[&.hide-header]:z-0 from-lg:[&.hide-header]:opacity-0"
-      id="navbar-collapse-toggle">
+      id="navbar-collapse-toggle" role="banner">
       <!-- Fixed Desktop Navigation Starts -->
       <ul id="desktop-nav" class="icon-menu down-lg:hidden from-md:block uppercase">
          <li
@@ -68,7 +131,7 @@
       </ul>
       <!-- Fixed Desktop Navigation Ends -->
       <!-- Mobile Menu Starts -->
-      <nav class="hidden down-md:block relative">
+      <nav class="hidden down-md:block relative" aria-label="Primary">
          <div id="menuToggle"
             class="fixed top-30 right-30 z-50 select-none pt-19 pl-16 w-54 h-54 rounded-5 bg-black-3 xs:right-15 xs:top-4 xs:pb-13 xs:w-49 xs:h-49">
             <input id="inputmobile" class="h-54 w-54 absolute top-0 left-0 opacity-0 z-20 cursor-pointer peer"
@@ -115,24 +178,25 @@
             <!-- Desktop Image Starts -->
             <img
                class="hidden from-lg:block fixed w-1/3 h-[calc(100vh-80px)] left-40 top-40 rounded-30 shadow-1 object-cover"
-               src="assets/img/tilen_komel1020x610.jpg" alt="">
+               src="assets/img/tilen_komel1020x610.jpg" alt="Tilen Komel profile photo"
+               title="Tilen Komel — Full-Stack Developer" width="1020" height="610" fetchpriority="high">
             <!-- Desktop Image Ends -->
             <div class="from-lg:ml-100/3 from-lg:w-2/3">
                <div class="mx-auto max-w-550 custom-md-1:max-w-450">
                   <!-- Mobile Image Starts -->
                   <img src="assets/img/tilen_komel500x500.jpg"
                      class="hidden down-lg:block xs:!hidden rounded-full w-270 h-270 mx-auto mb-25 border-4 border-solid border-black-3"
-                     alt="my picture">
+                     alt="Tilen Komel profile photo" title="Tilen Komel — Full-Stack Developer" width="500"
+                     height="500">
                   <!-- Mobile Image Ends -->
                   <!-- Informations Starts -->
                   <h1
                      class="text-fs-51 text-accent font-Poppins relative uppercase font-bold leading-lh-62 pl-70 before:absolute before:left-0 before:top-29 before:h-4 before:w-40 before:rounded-10 custom-md-2:text-fs-42 down-xl:before:hidden down-xl:pl-0 custom-md-2:leading-lh-52 down-md:text-fs-38 down-md:leading-lh-48 down-md:mt-29 down-md:mb-13 xs:text-fs-29 xs:leading-lh-39 xs:mt-18">
-                     I'm Tilen Komel.<span class="block text-white">full stack developer</span></h1>
+                     I'm Tilen Komel.<span class="block text-white">Full-Stack Developer</span></h1>
                   <p
                      class="font-Open-sans mt-15 mb-28 leading-lh-35 down-lg:mt-2.5 down-lg:mb-23 down-lg:text-fs-15 down-lg:leading-lh-30">
-                     I'm a Slovenian based full stack developer. I have most experience with web
-                     development, based on JavaScript. On front-end I use Vue.js or React. On backend I use Node.js or
-                     Deno.</p>
+                     I’m a Slovenia‑based full‑stack developer. I build modern web apps with JavaScript — React or Vue
+                     on the front end, and Node.js or Deno on the back end.</p>
                   <div id="link-about"
                      class="button cursor-pointer overflow-hidden inline-block leading-lh-1.4 rounded-30 text-ellipsis text-center align-middle select-none transition-all duration-250 ease-in-out uppercase no-underline relative z-10 py-16 pr-70 pl-35 text-fs-15 font-semibold text-white bg-transparent outline-0 before:absolute before:-z-10 before:left-0 before:right-0 before:top-0 before:bottom-0 before:translate-x-full hover:before:translate-x-0 before:transition before:duration-300 before:ease-out">
                      <span class="relative z-20 text-white">more about me</span>
@@ -165,12 +229,12 @@
                   <!-- Personal Informations Starts -->
                   <div class="xl:basis-1/2 lg:basis-5/12 down-lg:basis-full mx-auto">
                      <h3 class="uppercase text-fs-26 xs:text-fs-21 pb-22 text-white font-semibold">
-                        personal infos
+                        Personal info
                      </h3>
                      <img
                         class="hidden xs:block rounded-full border-4 border-solid border-black-3 w-230 h-230 mb-25 mx-auto"
-                        src="./assets/img/tilen_komel500x500.jpg" alt="">
-                     <div class="flex justify-between xs:justify-start font-Open-sans capitalize">
+                        src="./assets/img/tilen_komel500x500.jpg" alt="Tilen Komel" width="500" height="500">
+                     <div class=" flex justify-between xs:justify-start font-Open-sans capitalize">
                         <div class="basis-1/2 [&>div]:pb-20 [&>div:last-child]:pb-0 text-fs-15 xs:text-fs-14">
                            <div>
                               <span class="opacity-80">
@@ -209,8 +273,8 @@
                                  GitHub:
                               </span>
                               <span class="xs:block custom-md-2:block">
-                                 <a href="https://github.com/komelt" target="_blank"
-                                    style="text-transform: none;">github.com/komelt</a>
+                                 <a href="https://github.com/komelt" target="_blank" rel="noopener"
+                                    title="GitHub — @komelt" style="text-transform: none;">github.com/komelt</a>
                               </span>
                            </div>
                         </div>
@@ -220,8 +284,9 @@
                                  Mastodon:
                               </span>
                               <span class="xs:block custom-md-2:block font-semibold">
-                                 <a href="https://toot.tux.si/@komelt" target="_blank"
-                                    style="text-transform: none;">@komelt.toot.tux.si</a>
+                                 <a href="https://toot.tux.si/@komelt" target="_blank" rel="me noopener"
+                                    title="Mastodon — @komelt@toot.tux.si"
+                                    style="text-transform: none;">@komelt@toot.tux.si</a>
                               </span>
                            </div>
                            <div>
@@ -229,7 +294,8 @@
                                  Email:
                               </span>
                               <span class="xs:block custom-md-2:block font-semibold">
-                                 <a href="mailto:me@komelt.dev" style="text-transform: none;">me@komelt.dev</a>
+                                 <a href="mailto:me@komelt.dev" title="Send email to me@komelt.dev"
+                                    style="text-transform: none;">me@komelt.dev</a>
                               </span>
                            </div>
                            <div>
@@ -242,7 +308,7 @@
                            </div>
                            <div>
                               <span class="opacity-80">
-                                 langages:
+                                 Languages:
                               </span>
                               <span class="xs:block custom-md-2:block font-semibold">
                                  Slovenian, English
@@ -258,7 +324,7 @@
                            class="absolute -right-px bottom-0 w-55 h-55 flex items-center justify-center rounded-full text-white text-fs-19 fa fa-download bg-accent"></span>
                      </a>-->
                      <a class="button ml-3 mt-30 overflow-hidden inline-block leading-lh-1.4 rounded-30 text-ellipsis text-center align-middle select-none transition-all duration-250 ease-in-out uppercase no-underline relative z-10 py-16 pr-70 pl-35 text-fs-15 font-semibold text-white bg-transparent outline-0 before:absolute before:-z-10 before:left-0 before:right-0 before:top-0 before:bottom-0 before:translate-x-full hover:before:translate-x-0 before:transition before:duration-300 before:ease-out"
-                        href="./id_rsa.pub">
+                        href="./id_rsa.pub" download>
                         <span class="relative z-20 text-white">my public key</span>
                         <span
                            class="absolute -right-px bottom-0 w-55 h-55 flex items-center justify-center rounded-full text-white text-fs-19 fa fa-download bg-accent"></span>
@@ -311,12 +377,14 @@
                               Discovered CVE-2025-21608
                               <span
                                  class="opacity-80 font-semibold text-fs-15 relative pl-26 font-Open-sans before:absolute before:w-10 before:h-2 before:bg-white before:left-7 before:top-9 before:opacity-80">
-                                 Meshtatsic
+                                 Meshtastic
                               </span>
                            </h5>
                            <p class="font-Open-sans text-light-grey text-fs-14">
-                              In 2025 I discovered CVE-2025-21608, a vulnerability in Meshtastic firmware that allowed
-                              attacker to bypass PKI check.
+                              In 2025 I discovered <a
+                                 href="https://github.com/meshtastic/firmware/security/advisories/GHSA-c967-qc39-3hf5"
+                                 target="_blank">CVE-2025-21608</a>, a vulnerability in the Meshtastic firmware that
+                              allowed an attacker to bypass PKI checks.
                            </p>
                         </li>
                         <li
@@ -337,9 +405,8 @@
                               </span>
                            </h5>
                            <p class="font-Open-sans text-light-grey text-fs-14">
-                              Graduated as gold high school graduate from vocational matura. School: School centre Nova
-                              Gorica, Electrical engineering and computer science school Educationa program: Computer
-                              technician
+                              Graduated with distinction from the School Centre Nova Gorica, Electrical Engineering and
+                              Computer Science School. Educational program: Computer technician.
                            </p>
                         </li>
                      </ul>
@@ -388,7 +455,7 @@
                               </span>
                            </h5>
                            <p class="font-Open-sans text-light-grey text-fs-14">
-                              Currently working at Topis Mojca Babuder s.p., I am working with Wordpress sites and
+                              Currently working at Topis Mojca Babuder s.p., I am working with WordPress sites and
                               servers.
                            </p>
                         </li>
@@ -448,7 +515,10 @@
                         <li class="w-1/3 down-lg:w-1/2 xs:w-full float-left cursor-pointer p-15 xs:px-0">
                            <figure class="transition duration-300 rounded-5 relative overflow-hidden">
                               <img class="block relative w-full rounded-5 transition duration-300"
-                                 src="./assets/img/projects/rf-planner.png" alt="">
+                                 src="./assets/img/projects/rf-planner.png" width="720" height="378"
+                                 alt="RF Planner — web app screenshot"
+                                 title="RF Planner — Bachelor's thesis • Vue, Tailwind CSS, Python, SPLAT"
+                                 loading="lazy" decoding="async">
                               <div class="absolute w-full h-full flex items-center justify-center bg-accent">
                                  <span class="uppercase text-fs-18 text-white">
                                     RF Planner
@@ -461,7 +531,9 @@
                         <li class="w-1/3 down-lg:w-1/2 xs:w-full float-left cursor-pointer p-15 xs:px-0">
                            <figure class="transition duration-300 rounded-5 relative overflow-hidden">
                               <img class="block relative w-full rounded-5 transition duration-300"
-                                 src="./assets/img/projects/meshtastic.png" alt="">
+                                 src="./assets/img/projects/meshtastic.png" width="720" height="378"
+                                 alt="Meshtastic web client — UI screenshot"
+                                 title="Meshtastic Web Client — React, Tailwind CSS" loading="lazy" decoding="async">
                               <div class="absolute w-full h-full flex items-center justify-center bg-accent">
                                  <span class="uppercase text-fs-18 text-white">
                                     Meshtastic Web Client
@@ -474,7 +546,10 @@
                         <li class="w-1/3 down-lg:w-1/2 xs:w-full float-left cursor-pointer p-15 xs:px-0">
                            <figure class="transition duration-300 rounded-5 relative overflow-hidden">
                               <img class="block relative w-full rounded-5 transition duration-300"
-                                 src="./assets/img/projects/meshnet.png" alt="">
+                                 src="./assets/img/projects/meshnet.png" width="720" height="378"
+                                 alt="MeshNet.si — website screenshot"
+                                 title="MeshNet.si — community site • Vue, Tailwind CSS" loading="lazy"
+                                 decoding="async">
                               <div class="absolute w-full h-full flex items-center justify-center bg-accent">
                                  <span class="uppercase text-fs-18 text-white">
                                     MeshNet.si webpage
@@ -487,7 +562,9 @@
                         <li class="w-1/3 down-lg:w-1/2 xs:w-full float-left cursor-pointer p-15 xs:px-0">
                            <figure class="transition duration-300 rounded-5 relative overflow-hidden">
                               <img class="block relative w-full rounded-5 transition duration-300"
-                                 src="./assets/img/projects/rkjsezana.png" alt="">
+                                 src="./assets/img/projects/rkjsezana.png" width="720" height="378"
+                                 alt="RKJ Sežana — website screenshot" title="RKJ Sežana — website • WordPress"
+                                 loading="lazy" decoding="async">
                               <div class="absolute w-full h-full flex items-center justify-center bg-accent">
                                  <span class="uppercase text-fs-18 text-white">
                                     rkjsezana.si webpage
@@ -517,7 +594,7 @@
                                     </div>
                                     <div class="w-1/2 xs:w-full mb-8">
                                        <i class="fa fa-user-o pr-8"></i><span class="project-label">Client</span>:
-                                       <span class="font-semibold">Bachelors Thesis</span>
+                                       <span class="font-semibold">Bachelor’s Thesis</span>
                                     </div>
                                     <div class="w-1/2 xs:w-full mb-8">
                                        <i class="fa fa-code pr-8"></i><span class="project-label">Langages</span>:
@@ -526,15 +603,17 @@
                                     <div class="w-1/2 xs:w-full mb-8">
                                        <i class="fa fa-external-link pr-8"></i><span class="project-label">Preview
                                        </span>: <span class="font-semibold"><a class="underline text-accent"
-                                             href="https://rf-planner.komelt.dev/"
-                                             target="_blank">rf-planner.komelt.dev</a></span>
+                                             href="https://rf-planner.komelt.dev/" target="_blank"
+                                             rel="noopener noreferrer"
+                                             title="Open RF Planner live preview (new tab)">rf-planner.komelt.dev</a></span>
                                     </div>
                                  </div>
                               </figcaption>
                               <!-- Project Details Ends -->
                               <!-- Main Project Content Starts -->
                               <img class="block w-full rounded-5" src="./assets/img/projects/rf-planner1.png"
-                                 alt="Portolio Image">
+                                 width="600" height="310" alt="RF Planner path profile view in the app"
+                                 title="RF Planner — path profile view" loading="lazy" decoding="async">
                               <!-- Main Project Content Ends -->
                            </figure>
                         </li>
@@ -563,20 +642,23 @@
                                     <div class="w-1/2 xs:w-full mb-8">
                                        <i class="fa fa-external-link pr-8"></i><span class="project-label">Preview
                                        </span>: <span class="font-semibold"><a class="underline text-accent"
-                                             href="https://client.meshtastic.org/"
-                                             target="_blank">client.meshtastic.org</a></span>
+                                             href="https://client.meshtastic.org/" target="_blank"
+                                             rel="noopener noreferrer">client.meshtastic.org</a></span>
                                     </div>
                                     <div class="w-full mb-8">
                                        <p>I contributed to the web app for managing devices running <a
                                              class="underline text-accent" href="https://meshtastic.org/"
-                                             target="_blank">Meshtastic firmware</a>.</p>
+                                             target="_blank" rel="noopener"
+                                             title="Open Meshtastic Web Client (new tab)">Meshtastic
+                                             firmware</a>.</p>
                                     </div>
                                  </div>
                               </figcaption>
                               <!-- Project Details Ends -->
                               <!-- Main Project Content Starts -->
                               <img class="block w-full rounded-5" src="./assets/img/projects/meshtastic1.png"
-                                 alt="Portolio Image">
+                                 width="600" height="310" alt="Meshtastic web client device detail screen"
+                                 title="Meshtastic Web Client — device detail" loading="lazy" decoding="async">
                               <!-- Main Project Content Ends -->
                            </figure>
                         </li>
@@ -605,24 +687,29 @@
                                     <div class="w-1/2 xs:w-full mb-8">
                                        <i class="fa fa-external-link pr-8"></i><span class="project-label">Preview
                                        </span>: <span class="font-semibold"><a class="underline text-accent"
-                                             href="https://meshnet.si/" target="_blank">meshnet.si</a></span>
+                                             href="https://meshnet.si/" target="_blank" rel="noopener noreferrer"
+                                             title="Open MeshNet.si (new tab)">meshnet.si</a></span>
                                     </div>
                                     <div class="w-full mb-8">
                                        <p>My passion for <a class="underline text-accent" href="https://meshtastic.org/"
-                                             target="_blank">meshtastic.org</a> project led me to create a dedicated
+                                             target="_blank" rel="noopener noreferrer">meshtastic.org</a> project led me
+                                          to
+                                          create a dedicated
                                           webpage at MeshNet.si for Slovenians interested in the project.
                                           Which combines how to guides, tools and links to our other resources,
                                           including <a class="underline text-accent" href="https://map.meshnet.si/"
-                                             target="_blank">map.meshnet.si</a> and <a class="underline text-accent"
-                                             href="https://stat.meshnet.si/" target="_blank">stat.meshnet.si</a>.
+                                             target="_blank" rel="noopener noreferrer">map.meshnet.si</a> and <a
+                                             class="underline text-accent" href="https://stat.meshnet.si/"
+                                             target="_blank" rel="noopener noreferrer">stat.meshnet.si</a>.
                                        </p>
                                     </div>
                                  </div>
                               </figcaption>
                               <!-- Project Details Ends -->
                               <!-- Main Project Content Starts -->
-                              <img class="block w-full rounded-5" src="./assets/img/projects/meshnet1.png"
-                                 alt="Portolio Image">
+                              <img class="block w-full rounded-5" src="./assets/img/projects/meshnet1.png" width="600"
+                                 height="310" alt="MeshNet.si landing page" title="MeshNet.si — landing page"
+                                 loading="lazy" decoding="async">
                               <!-- Main Project Content Ends -->
                            </figure>
                         </li>
@@ -646,19 +733,21 @@
                                     </div>
                                     <div class="w-1/2 xs:w-full mb-8">
                                        <i class="fa fa-code pr-8"></i><span class="project-label">Technology</span>:
-                                       <span class="font-semibold">Wordpress</span>
+                                       <span class="font-semibold">WordPress</span>
                                     </div>
                                     <div class="w-1/2 xs:w-full mb-8">
                                        <i class="fa fa-external-link pr-8"></i><span class="project-label">Preview
                                        </span>: <span class="font-semibold"><a class="underline text-accent"
-                                             href="https://www.rkjsezana.si/" target="_blank">rkjsezana.si</a></span>
+                                             href="https://www.rkjsezana.si/" target="_blank" rel="noopener noreferrer"
+                                             title="Open rkjsezana.si (new tab)">rkjsezana.si</a></span>
                                     </div>
                                  </div>
                               </figcaption>
                               <!-- Project Details Ends -->
                               <!-- Main Project Content Starts -->
-                              <img class="block w-full rounded-5" src="./assets/img/projects/rkjsezana1.png"
-                                 alt="Portolio Image">
+                              <img class=" block w-full rounded-5" src="./assets/img/projects/rkjsezana1.png"
+                                 width="600" height="310" alt="RKJ Sežana website homepage"
+                                 title="RKJ Sežana — homepage" loading="lazy" decoding="async">
                               <!-- Main Project Content Ends -->
                            </figure>
                         </li>
@@ -668,14 +757,17 @@
                      <nav
                         class="down-lg:fixed down-lg:top-0 down-lg:w-full down-lg:h-102 down-lg:bg-black-3 down-lg:z-10 down-lg:border-b down-lg:border-solid down-lg:border-b-black-4 xs:h-62">
                         <span
-                           class="nav-prev fixed cursor-pointer py-200 px-30 top-1/2 down-lg:top-35 from-lg:-translate-y-1/2 from-lg:left-0 down-lg:left-30 xs:w-20 xs:top-21"><img
-                              class="block" src="assets/img/projects/navigation/left-arrow.png" alt="previous"></span>
+                           class="nav-prev fixed cursor-pointer py-200 px-30 top-1/2 down-lg:top-35 from-lg:-translate-y-1/2 from-lg:left-0 down-lg:left-30 xs:w-20 xs:top-21"
+                           role="button" tabindex="0" aria-label="Previous project"><img class="block"
+                              src="assets/img/projects/navigation/left-arrow.png" alt="previous"></span>
                         <span
-                           class="nav-next fixed cursor-pointer py-200 px-30 top-1/2 down-lg:top-35 from-lg:-translate-y-1/2 from-lg:right-0 down-lg:right-30 xs:w-20 xs:top-21"><img
-                              class="block" src="assets/img/projects/navigation/right-arrow.png" alt="next"></span>
+                           class="nav-next fixed cursor-pointer py-200 px-30 top-1/2 down-lg:top-35 from-lg:-translate-y-1/2 from-lg:right-0 down-lg:right-30 xs:w-20 xs:top-21"
+                           role="button" tabindex="0" aria-label="Next project"><img class="block"
+                              src="assets/img/projects/navigation/right-arrow.png" alt="next"></span>
                         <span
-                           class="nav-close fixed cursor-pointer from-lg:top-30 down-lg:top-35 from-lg:right-30 down-lg:left-0 down-lg:right-0 down-lg:mx-auto down-lg:block down-lg:w-32 xs:w-20 xs:top-21"><img
-                              class="block" src="assets/img/projects/navigation/close-button.png" alt="close"> </span>
+                           class="nav-close fixed cursor-pointer from-lg:top-30 down-lg:top-35 from-lg:right-30 down-lg:left-0 down-lg:right-0 down-lg:mx-auto down-lg:block down-lg:w-32 xs:w-20 xs:top-21"
+                           role="button" tabindex="0" aria-label="Close project details"><img class="block"
+                              src="assets/img/projects/navigation/close-button.png" alt="close"> </span>
                      </nav>
                      <!-- Projects Navigation Ends -->
                   </div>
@@ -689,15 +781,15 @@
    </div>
    <!-- Main Content Ends -->
    <!-- Template JS Files -->
-   <script src="assets/js/jquery-3.7.1.min.js"></script>
-   <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-   <script src="assets/js/masonry.pkgd.min.js"></script>
-   <script src="assets/js/classie.js"></script>
-   <script src="assets/js/main.js"></script>
-   <script src="assets/js/cbpGridGallery.js"></script>
-   <script src="assets/js/jquery.hoverdir.js"></script>
-   <script src="assets/js/menu.js"></script>
-   <script src="assets/js/custom.js"></script>
+   <script src="assets/js/jquery-3.7.1.min.js" defer></script>
+   <script src="assets/js/imagesloaded.pkgd.min.js" defer></script>
+   <script src="assets/js/masonry.pkgd.min.js" defer></script>
+   <script src="assets/js/classie.js" defer></script>
+   <script src="assets/js/main.js" defer></script>
+   <script src="assets/js/cbpGridGallery.js" defer></script>
+   <script src="assets/js/jquery.hoverdir.js" defer></script>
+   <script src="assets/js/menu.js" defer></script>
+   <script src="assets/js/custom.js" defer></script>
 </body>
 
 </html>
